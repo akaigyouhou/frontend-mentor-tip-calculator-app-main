@@ -1,0 +1,145 @@
+.operate {
+    padding: 2em 2.05em 1.9em 2em;
+}
+
+.operate__bill {
+    margin-bottom: 2.05em;
+    position: relative;
+}
+
+.opearte__bill__label {
+    display: block;
+    margin-bottom: 0.4em;
+}
+
+.operate__bill__input {
+    /* width: 12em; */
+    width: 100%;
+
+}
+.operate__bill__input + span::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 19px;
+    background-image: url("../images/icon-dollar.svg");
+    background-repeat: no-repeat;
+}
+
+.operate__select-tip {
+    margin-bottom: 2em;
+}
+
+.opearte__select-tip__title {
+    margin-bottom: 1em;
+}
+
+.operate__select-tip__area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15.5px 16px;
+    width: 100%;
+}
+
+.operate__select-tip__label:hover {
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+.operate__select-tip__label_checked {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+
+.opearte__select-tip__input {
+    width: 100%;
+    text-align: right;
+    padding-left: 1.3em;
+    padding-right: 0.7em;
+}
+
+.opearte__select-tip__input:focus {
+    padding-right: 0.6em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.operate__number-of-people {
+    position: relative;
+}
+
+.operate__number-of-people__label {
+    display: block;
+    margin-bottom: 0.4em;
+}
+.operate__number-of-people__input {
+    width: 100%;
+}
+.operate__number-of-people__input + span::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 45px;
+    left: 17px;
+    background-image: url("../images/icon-person.svg");
+    background-repeat: no-repeat;
+}
+
+.error-message {
+    position: absolute;
+    right: 1px;
+    top: 0;
+    color: orangered;
+}
+
+.operate__number-of-people__input_error {
+    outline: none;
+    border: 2px solid orangered;
+    padding-top: 0.17em;
+    padding-bottom: 0.17em;
+}
+.operate__number-of-people__input_error:focus {
+    outline: none;
+    border: 2px solid orangered;
+    padding-top: 0.17em;
+    padding-bottom: 0.17em;
+    padding-right: 0.7em;
+}
+
+@media (min-width: 800px) {
+    .operate-container {
+        flex: 1;
+    }
+    .operate {
+        padding: .9em 2.05em 0 .95em;
+    }
+    .operate__bill {
+        margin-bottom: 2.5em;
+    }
+    .operate__select-tip__area {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 15px 14px;
+    }
+    .operate__select-tip {
+        margin-bottom: 2.5em;
+    }
+    .opearte__select-tip__input {
+        padding-left: 0.4em;
+        padding-right: 0.65em;
+    }
+    
+    .opearte__select-tip__input:focus {
+        padding-left: 0.4em;
+        padding-right: 0.57em;
+    }
+}
+
+

@@ -1,38 +1,108 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* opacity: 0.5; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--Light-grayish-cyan);
+  font-family: "SpaceMono";
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.text_white {
+  color: var(--Very-light-grayish-cyan);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text_strong-cyan {
+  color: var(--Strong-cyan);
+}
+.text_dark-cyan {
+  color: var(--Dark-grayish-cyan);
+}
+
+.text_light-cyan {
+  color: var(--Grayish-cyan);
+}
+
+.text_big {
+  font-size: 1.93em;
+}
+
+.text_small {
+  font-size: 0.8em;
+}
+
+.button {
+  border: none;
+  font-size: 1.5em;
+  padding: 0.26em 0;
+  text-align: center;
+  font-family: "SpaceMono";
+  color: var(--Very-light-grayish-cyan);
+  background-color: var(--Very-dark-cyan);
+  border-radius: 6px;
+}
+
+.button-text {
+  color: var(--Dark-grayish-cyan);
+  background-color: var(--Very-light-grayish-cyan);
+}
+
+input {
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  font-family: "SpaceMono";
+  padding: 0.263em 0.7em;
+  /* background-color: lightpink; */
+  /* padding-left: 8.55em; */
+  font-size: 1.5em;
+  border-radius: 7px;
+  text-align: right;
+  color: var(--Very-dark-cyan);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--Strong-cyan);
+  padding-top: 0.18em;
+  padding-bottom: 0.18em;
+  padding-right: 0.62em;
+}
+
+input::-webkit-input-placeholder{
+  color:var(--Grayish-cyan);
+}
+
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:var(--Grayish-cyan);
+}
+
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:var(--Grayish-cyan);
+}
+
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+ color:var(--Grayish-cyan);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (min-width: 800px) {
+  .App {
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  .text_big {
+    font-size: 2.9em;
+    margin-bottom: 0.1em;
   }
 }

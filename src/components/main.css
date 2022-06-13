@@ -1,0 +1,17 @@
+.main {
+    width: 100vw;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+@media (min-width: 800px) {
+    .main {
+        width: 64vw;
+        flex-direction: row;
+        padding: 2em 2.1em 1.2em;
+        border-radius: 25px;
+    }
+}
