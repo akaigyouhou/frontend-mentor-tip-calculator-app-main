@@ -11,7 +11,7 @@
     .main {
         width: 64vw;
         flex-direction: row;
-        padding: 2em 2.1em 1.2em;
+        padding: 2em 2.1em 0.1em;
         border-radius: 25px;
         margin-bottom: 5em;
     }
