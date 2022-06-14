@@ -19,7 +19,7 @@ const Show = ({tipPerson, totalPerson, reset, handleReset}) => {
     const showedTotalPerson = changeToShow(totalPerson);
 
     return (
-        <div className="show-container"G>
+        <div className="show-container">
             <div className="show">
                 <div className="show__tip">
                     <div className="show__tip__text">
