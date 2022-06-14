@@ -8,10 +8,10 @@ const Main = () => {
     const [totalPerson, setTotalPerson] = useState(0);
     const [reset, setReset] = useState(false);
 
-    const [bill, setBill] = useState(142.55);
+    const [bill, setBill] = useState("");
     const [customTip, setCustomTip] = useState("");
-    const [tip, setTip] = useState("15");
-    const [person, setPerson] = useState("5");
+    const [tip, setTip] = useState("");
+    const [person, setPerson] = useState("");
     const [error, setError] = useState(false);
 
     const handleReset = () => {

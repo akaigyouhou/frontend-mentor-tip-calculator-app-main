@@ -13,5 +13,6 @@
         flex-direction: row;
         padding: 2em 2.1em 1.2em;
         border-radius: 25px;
+        margin-bottom: 5em;
     }
 }
